@@ -32,3 +32,5 @@ Following this [helpful guide](https://scotch.io/tutorials/mean-app-with-angular
 - Run `node server.js`
 
 - `http://localhost:3000` loads the app, and `http://localhost:3000/api` shows that the express api works
+
+*Uses the [JSONPlaceholder](https://jsonplaceholder.typicode.com/) mock api to respond with some data*
