@@ -1,16 +1,15 @@
-# MEAN App
-(MongoDB, Ember, Angular, Node)
+# MEAN App (MongoDB, EmberJS, Angular, NodeJS)
 
 Teaching myself how to use Angular 2 with an Express api
 
-Following this [helpful guide](https://scotch.io/tutorials/mean-app-with-angular-2-and-the-angular-cli) I found on the Internet.
+Following this [helpful guide](https://scotch.io/tutorials/mean-app-with-angular-2-and-the-angular-cli) on scotch.io.
 
 - To start server, run `node server.js` on the command line.
   Go to localhost:3000 in the browser to view app, and localhost:3000/api to see that the api works.
 
 # Steps
 
-- install the angular cli with `npm install -g angular-cli` in the command line
+- Install the angular cli with `npm install -g angular-cli` in the command line
 
 ## Create the Angular App
 
@@ -20,7 +19,7 @@ Following this [helpful guide](https://scotch.io/tutorials/mean-app-with-angular
 
 ## Adding Express
 
-- install Express with `npm install --save express body-parser`
+- Install Express with `npm install --save express body-parser`
 
 - Create a file in the root of directory called `server.js` and a folder called `server`
   - Add code
