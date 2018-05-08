@@ -1,5 +1,5 @@
 {
-  "name": "angular-app-front",
+  "name": "mean-app",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -9,6 +9,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
+  },
+  "engines": {
+    "node": "6.11.2"
   },
   "private": true,
   "dependencies": {
