@@ -1,4 +1,5 @@
 # MEAN App
+(MongoDB, Ember, Angular, Node)
 
 Teaching myself how to use Angular 2 with an Express api
 
