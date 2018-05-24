@@ -12,16 +12,16 @@ import { PostsService } from './posts.service';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 
-Define the routes
+// Define the routes
 const ROUTES = [
   {
     path: '',
-    redirectTo: 'register',
+    redirectTo: 'posts',
     pathMatch: 'full'
   },
   {
-    path: 'register',
-    component: RegisterComponent
+    path: 'posts',
+    component: PostsComponent
   }
 ];
 
