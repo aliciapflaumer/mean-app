@@ -5,6 +5,25 @@ const router = express.Router();
 const axios = require('axios');
 const API = 'https://jsonplaceholder.typicode.com';
 
+// const NewsAPI = require('newsapi');
+// const newsapi = new NewsAPI('825de09aa7b84ba2895d7d1ae9c1f1cd');
+//
+// // To query sources
+// // All options are optional
+// newsapi.v2.sources({
+//   category: 'technology',
+//   language: 'en',
+//   country: 'us'
+// }).then(response => {
+//   console.log(response);
+//   /*
+//     {
+//       status: "ok",
+//       sources: [...]
+//     }
+//   */
+// });
+
 /* GET api listing. */
 router.get('/', (req, res) => {
   res.send('api works');

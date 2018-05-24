@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { PostsComponent } from './posts/posts.component';
 
 import { PostsService } from './posts.service';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 // Define the routes
 const ROUTES = [
@@ -26,7 +28,9 @@ const ROUTES = [
 @NgModule({
   declarations: [
     AppComponent,
-    PostsComponent
+    PostsComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -4,9 +4,17 @@ const path = require('path');
 const http = require('http');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 // connect to a mongoDB database
-mongoose.connect('mongodb://localhost/database');
+const connection = mongoose.connect('mongodb://localhost/database');
+
+// Get notified if successfully connected or error occurs
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  // we're connected!
+});
 
 // Get our API routes
 const api = require('./server/routes/api');
@@ -27,6 +35,7 @@ app.use('/api', api);
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/index.html'));
 });
+
 
 /**
  * Get port from environment and store in Express.
